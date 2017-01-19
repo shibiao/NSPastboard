@@ -35,4 +35,11 @@ class SBView: NSView {
         Swift.print("kk")
         return true
     }
+    override func prepareForDragOperation(_ sender: NSDraggingInfo) -> Bool {
+        
+        return true
+    }
+    override func concludeDragOperation(_ sender: NSDraggingInfo?) {
+        
+    }
 }
