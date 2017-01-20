@@ -22,6 +22,7 @@
 		91897C181E30506C00EB6DC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		91897C1A1E30506C00EB6DC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91897C201E3051AB00EB6DC3 /* SBView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBView.swift; sourceTree = "<group>"; };
+		91897C221E306C1D00EB6DC3 /* NSPastboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NSPastboard.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		91897C101E30506C00EB6DC3 /* NSPastboard */ = {
 			isa = PBXGroup;
 			children = (
+				91897C221E306C1D00EB6DC3 /* NSPastboard.entitlements */,
 				91897C111E30506C00EB6DC3 /* AppDelegate.swift */,
 				91897C131E30506C00EB6DC3 /* ViewController.swift */,
 				91897C201E3051AB00EB6DC3 /* SBView.swift */,
@@ -98,6 +100,14 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = M54Y5FDG74;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -250,6 +260,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NSPastboard/NSPastboard.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = M54Y5FDG74;
 				INFOPLIST_FILE = NSPastboard/Info.plist;
@@ -264,6 +275,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NSPastboard/NSPastboard.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = M54Y5FDG74;
 				INFOPLIST_FILE = NSPastboard/Info.plist;
@@ -293,6 +305,7 @@
 				91897C1F1E30506C00EB6DC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
